@@ -1,0 +1,50 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Perfect Tiles</title>
+</head>
+
+<body>
+    <img src="..\Game\asset\pic\image1.jpg">
+    <div class="start">
+        <h1>Perfect Tiles</h1>
+        <button>Play</button>
+    </div>
+
+    <div id="game" style="display: none;">
+        <div id="game-container">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <div class="line" id="line4"></div>
+        </div>
+        <div class="tiles" id="tiles"></div>
+        <div class="score">
+            <p id="score">0</p>
+        </div>
+    </div>
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed The Game!</div>
+        <div class="score_text">You've scored 0 points</div>
+        <div class="buttons">
+            <button class="restart">Replay</button>
+        </div>
+    </div>
+    <audio id="audio" src="..\Game\asset\audio\1.m4a" hidden>
+        <audio id="play" src="..\Game\asset\audio\playbtn.mp3" hidden>
+            <audio id="out" src="..\Game\asset\audio\end.mp3" hidden>
+                <audio id="result" src="..\Game\asset\audio\result.mp3" hidden>
+                    <script src="script.js"></script>
+</body>
+
+</html>
